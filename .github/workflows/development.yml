@@ -1,11 +1,14 @@
-name: Production Tests
+name: Development Tests
 
 on:
   push:
     branches:
-      - 'main'
+      - 'development'
     tags:
       - 'v*'
+  pull_request:
+    branches:
+      - 'main'
 
 jobs:
   runtest:

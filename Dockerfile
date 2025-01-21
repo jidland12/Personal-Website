@@ -3,4 +3,4 @@ WORKDIR /src/personal-website
 COPY . /src/personal-website/
 RUN pip install -r requirements.txt
 EXPOSE 8080
-CMD python ./app/__init__.py
+CMD ["python", "./app/__init__.py"]
